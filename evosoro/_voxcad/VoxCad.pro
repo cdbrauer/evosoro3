@@ -6,7 +6,7 @@ TEMPLATE = app
 TARGET = VoxCad
 DESTDIR = release
 QT += core gui xml opengl
-CONFIG += debug
+CONFIG += debug qwt
 DEFINES += QT_XML_LIB QT_OPENGL_LIB USE_ZLIB_COMPRESSION USE_OPEN_GL QT_DLL PREC_MED
 INCLUDEPATH += ../../../../Libs/qwt/src \
     . \
@@ -16,7 +16,7 @@ INCLUDEPATH += ../../../../Libs/qwt/src \
     ./GeneratedFiles \
     ./../Utils \
     /usr/include/qwt
-LIBS += -lqwt \
+LIBS += \
 #    -lOpenGL32 \
     -lGL \
  #   -lglu32 \
